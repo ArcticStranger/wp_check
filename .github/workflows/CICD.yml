@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DEPLOY_PATH: ${{ github.event_name == 'push' && '/var/www/html/://arcticobserver.com' || '/var/www/html/://arcticobserver.com' }}
+      DEPLOY_PATH: ${{ github.event_name == 'push' && '/var/www/html/dev.arcticobserver.com' || '/var/www/html/live.arcticobserver.com' }}
 
     steps:
     - name: Checkout
